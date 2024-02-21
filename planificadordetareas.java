@@ -28,3 +28,18 @@ class PlanificadorTareas {
         }
     }
 }
+
+public class planificadordetareas {
+    public static void main(String[] args) {
+        String[] miembros = {"Miembro 1", "Miembro 2", "Miembro 3"};
+        int[][] tareas = {
+                {2, 4, 6, 8},
+                {1, 3, 5, 7},
+                {9, 10, 11, 12}
+        };
+
+        PlanificadorTareas planificador = new PlanificadorTareas(miembros, tareas);
+        planificador.visualizarTablaTareas();
+        planificador.calcularCargaTrabajoOptima();
+    }
+}
