@@ -54,3 +54,20 @@ class ConsumoRecursos {
         return Collections.max(registros, (a, b) -> Double.compare(a.getCantidad(), b.getCantidad())).getCantidad();
     }
 }
+
+public class recursosysuministros {
+    public static void main(String[] args) {
+        ConsumoRecursos consumoRecursos = new ConsumoRecursos();
+
+
+        consumoRecursos.agregarRegistro(new RecursoConsumido(10));
+        consumoRecursos.agregarRegistro(new RecursoConsumido(20));
+        consumoRecursos.agregarRegistro(new RecursoConsumido(15));
+
+       
+        System.out.println("Total consumido: " + consumoRecursos.calcularTotal());
+        System.out.println("Media de consumo: " + consumoRecursos.calcularMedia());
+        System.out.println("Mínimo consumido: " + consumoRecursos.calcularMinimo());
+        System.out.println("Máximo consumido: " + consumoRecursos.calcularMaximo());
+    }
+}
