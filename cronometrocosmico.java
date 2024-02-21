@@ -13,7 +13,6 @@ public class cronometrocosmico {
         double dias = (tiempoNuevoPlaneta / (60 * 60 * 24)) % 365;
         double años = tiempoNuevoPlaneta / (60 * 60 * 24 * 365);
 
-
         System.out.println("Tiempo en el nuevo planeta:");
         System.out.println("Años: " + años);
         System.out.println("Días: " + dias);
