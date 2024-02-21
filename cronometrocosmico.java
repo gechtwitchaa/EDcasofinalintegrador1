@@ -22,4 +22,18 @@ public class cronometrocosmico {
         System.out.println("Segundos: " + segundos);
     }
 
-   
+    public static void mayoresValoresRepresentables() {
+        System.out.println("Mayores valores representables en el nuevo planeta:");
+
+        System.out.println("Enteros:");
+        System.out.println("Byte: " + Byte.MAX_VALUE);
+        System.out.println("Short: " + Short.MAX_VALUE);
+        System.out.println("Int: " + Integer.MAX_VALUE);
+        System.out.println("Long: " + Long.MAX_VALUE);
+
+        System.out.println("Punto flotante:");
+        System.out.println("Float: " + Float.MAX_VALUE);
+        System.out.println("Double: " + Double.MAX_VALUE);
+    }
+
+ 
