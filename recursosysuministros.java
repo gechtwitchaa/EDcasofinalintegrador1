@@ -64,7 +64,7 @@ public class recursosysuministros {
         consumoRecursos.agregarRegistro(new RecursoConsumido(20));
         consumoRecursos.agregarRegistro(new RecursoConsumido(15));
 
-       
+
         System.out.println("Total consumido: " + consumoRecursos.calcularTotal());
         System.out.println("Media de consumo: " + consumoRecursos.calcularMedia());
         System.out.println("Mínimo consumido: " + consumoRecursos.calcularMinimo());
