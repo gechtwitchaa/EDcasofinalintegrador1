@@ -38,3 +38,47 @@ class Monitoreo {
         return eventosRaros;
     }
 
+    private boolean esPrimo(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public List<Integer> descomponerEnFactoresPrimos(int num) {
+        List<Integer> factoresPrimos = new ArrayList<>();
+        int divisor = 2;
+
+        while (num > 1) {
+            if (num % divisor == 0) {
+                factoresPrimos.add(divisor);
+                num /= divisor;
+            } else {
+                divisor++;
+            }
+        }
+
+        return factoresPrimos;
+    }
+}
+
+public class alertaymonitoreo {
+    public static void main(String[] args) {
+        Monitoreo monitoreo = new Monitoreo(110, 38, 780);
+        monitoreo.verificarValoresExtremos();
+
+        int N = 5; 
+        List<Integer> eventosRaros = monitoreo.listarEventosRaros(N);
+        System.out.println("Eventos raros (primeros " + N + " números primos): " + eventosRaros);
+
+        int numero = 315;
+        List<Integer> factoresPrimos = monitoreo.descomponerEnFactoresPrimos(numero);
+        System.out.println("Factores primos de " + numero + ": " + factoresPrimos);
+    }
+}
+
