@@ -27,4 +27,26 @@ public class navegadorestelar {
         return resultado;
     }
 
- 
+    public static void main(String[] args) {
+        int[][] terreno = {
+                {1, 0, 1},
+                {0, 1, 1},
+                {1, 1, 0}
+        };
+
+        int[][] construcciones = {
+                {1, 0, 0},
+                {0, 1, 0},
+                {0, 0, 1}
+        };
+
+        navegadorestelar navegador = new navegadorestelar(terreno, construcciones);
+
+        int[][] resultado = multiplicarMatrices(terreno, construcciones);
+
+        for (int[] fila : resultado) {
+            System.out.println(Arrays.toString(fila));
+        }
+    }
+}
+
