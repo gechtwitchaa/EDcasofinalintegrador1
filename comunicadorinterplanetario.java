@@ -29,4 +29,19 @@ public class comunicadorinterplanetario {
         return true;
     }
 
- 
+    public static void main(String[] args) {
+        String mensaje = "Anita lava la tina";
+
+
+        int vocales = contarVocales(mensaje);
+        System.out.println("Número de vocales en el mensaje: " + vocales);
+
+
+        String mensajeInvertido = invertirMensaje(mensaje);
+        System.out.println("Mensaje invertido: " + mensajeInvertido);
+
+        
+        boolean esPalindromo = esPalindromo(mensaje);
+        System.out.println("¿El mensaje es un palíndromo?: " + esPalindromo);
+    }
+}
