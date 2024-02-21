@@ -36,4 +36,12 @@ public class cronometrocosmico {
         System.out.println("Double: " + Double.MAX_VALUE);
     }
 
- 
+    public static void main(String[] args) {
+
+        double tiempoTierra = 3600 * 24 * 365 * 30; // 30 años en segundos
+        calcularTiempo(tiempoTierra);
+
+        mayoresValoresRepresentables();
+    }
+}
+
