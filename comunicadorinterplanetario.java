@@ -40,7 +40,7 @@ public class comunicadorinterplanetario {
         String mensajeInvertido = invertirMensaje(mensaje);
         System.out.println("Mensaje invertido: " + mensajeInvertido);
 
-        
+
         boolean esPalindromo = esPalindromo(mensaje);
         System.out.println("¿El mensaje es un palíndromo?: " + esPalindromo);
     }
