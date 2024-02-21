@@ -72,7 +72,7 @@ public class alertaymonitoreo {
         Monitoreo monitoreo = new Monitoreo(110, 38, 780);
         monitoreo.verificarValoresExtremos();
 
-        int N = 5; 
+        int N = 5;
         List<Integer> eventosRaros = monitoreo.listarEventosRaros(N);
         System.out.println("Eventos raros (primeros " + N + " números primos): " + eventosRaros);
 
